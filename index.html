@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <link rel="stylesheet" href="jawa.css">
+</head>
+<body class="m">
+    <h2 class="h1`">Calculate Zakat</h2>
+    
+    Total Amount
+    <br>
+    <input type="name" id="totalAmount">
+    <br>
+    <button class="h2" onclick="let amount=document.getElementById('totalAmount').value;
+   let zakatAmount=amount/40;
+   document.getElementById('heading1').innerText=zakatAmount;
+   ">Calculate Zakat</button>
+   <br>
+   <h2 class="h2" id="heading"></h2>
+   <h2 class="h2" id="heading1">0</h2>
+   <br>
+   <h2 class="h1">Share Of Miras</h2>
+   <br>
+    Total Amount
+   <br>
+   <input type="number" id="share">
+   <br>
+   <br><button class="h2" onclick="let totalAmount=document.getElementById('share').value;
+   let wifeShare=totalAmount/8;
+   let sonShare=totalAmount-wifeShare;
+   let ful='Total amount is '+ totalAmount +' , the share of wife is '+ wifeShare+' and the share of son is '+sonShare;
+   document.getElementById('heading3').innerText=ful;
+   ">Calculate Share</button>
+   <p class="h2" id="heading3"></p>
+   <br>
+   <h2 class="h1">Qaza Namaz</h2>
+ Age;
+   <br>
+   <input type="number" id="qaza">
+   <br>
+   <button class="h2" onclick="let age=getElementById('qaza').value;
+ 
+let qazaSalahYear=age-12;
+let totalDay=365*qazaSalahYear;
+let totalSalah=totalDay*6;
+let result='The total Salah Qaza is '+totalSalah;
+document.getElementById('heading5').innerText=result;
+">Salah</button>
+<p class="h2" id="heading5"></p>
+
+    </button>  
+</body>
+    
+</html>
